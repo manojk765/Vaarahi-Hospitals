@@ -174,7 +174,7 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="px-2 pt-2 pb-3 space-y-1 max-h-[80vh] overflow-y-auto">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -199,7 +199,7 @@ const Navbar = () => {
                 <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${dropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               <div className={`mt-2 bg-white shadow-inner transition-all duration-300 ${
-                dropdownOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+                dropdownOpen ? 'max-h-96 opacity-100 overflow-y-auto' : 'max-h-0 opacity-0 overflow-hidden'
               }`}>
                 {serviceItems.map((service) => (
                   <Link

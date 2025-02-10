@@ -23,7 +23,7 @@ export default function NewBornCarePage() {
             <img
               src="https://sjc.microlink.io/crOXhfhd32jYe6Nnh0Ejw9X7gZU1mfZ-DS_olRXUFnq-KP1gkPK4CMdWWhPXjJNVugM85TxSuVK0EVGNhUuJ1w.jpeg"
               alt="Newborn Care"
-              fill
+              fill="true"
               className="object-cover"
             />
           </div>
@@ -112,7 +112,7 @@ export default function NewBornCarePage() {
             <img
               src="https://sjc.microlink.io/crOXhfhd32jYe6Nnh0Ejw9X7gZU1mfZ-DS_olRXUFnq-KP1gkPK4CMdWWhPXjJNVugM85TxSuVK0EVGNhUuJ1w.jpeg"
               alt="Parent Education"
-              fill
+              fill="true"
               className="object-cover"
             />
           </div>

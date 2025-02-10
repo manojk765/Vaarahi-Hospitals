@@ -1,6 +1,6 @@
 import { Star } from "lucide-react";
 
-export default function TestimonialsPage() {
+export default function TestimonialsPage() { 
   const testimonials = [
     {
       id: 1,
@@ -8,8 +8,8 @@ export default function TestimonialsPage() {
       rating: 5,
       content:
         "The care our daughter received was exceptional. The staff made her feel comfortable and safe throughout the entire process.",
-      video: true,
-      mediaUrl: "https://www.example.com/video1.mp4", // Link to the video
+      video: false,
+      mediaUrl: "assets/Hospital_logo.png", // Link to the video
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function TestimonialsPage() {
       content:
         "We couldn't be happier with the treatment and attention our son received. The doctors were patient and thorough in explaining everything.",
       video: false,
-      mediaUrl: "https://via.placeholder.com/350x200", // Link to the image
+      mediaUrl: "assets/Hospital_logo.png", // Link to the image
     },
     {
       id: 3,
@@ -26,8 +26,8 @@ export default function TestimonialsPage() {
       rating: 5,
       content:
         "The pediatric team went above and beyond in caring for our twins. Their expertise and compassion made a difficult time much easier.",
-      video: true,
-      mediaUrl: "https://www.example.com/video2.mp4", // Link to the video
+      video: false,
+      mediaUrl: "assets/Hospital_logo.png", // Link to the video
     },
     {
       id: 4,
@@ -36,17 +36,17 @@ export default function TestimonialsPage() {
       content:
         "Outstanding care and attention to detail. The facility is child-friendly and the staff knows exactly how to make kids feel at ease.",
       video: false,
-      mediaUrl: "https://via.placeholder.com/350x200", // Link to the image
+      mediaUrl: "assets/Hospital_logo.png", // Link to the image
     },
-    {
-      id: 5,
-      name: "Lisa Anderson",
-      rating: 5,
-      content:
-        "From the moment we walked in, we knew we were in good hands. The doctors are knowledgeable and the nurses are incredibly caring.",
-      video: true,
-      mediaUrl: "https://www.example.com/video3.mp4", // Link to the video
-    },
+    // {
+    //   id: 5,
+    //   name: "Lisa Anderson",
+    //   rating: 5,
+    //   content:
+    //     "From the moment we walked in, we knew we were in good hands. The doctors are knowledgeable and the nurses are incredibly caring.",
+    //   video: true,
+    //   mediaUrl: "https://www.example.com/video3.mp4", // Link to the video
+    // },
   ];
 
   return (

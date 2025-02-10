@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 function About() { 
@@ -48,7 +47,7 @@ function About() {
             src="https://media.istockphoto.com/id/1326890978/photo/shot-of-an-empty-hallway-in-a-lab.jpg?s=2048x2048&w=is&k=20&c=HpyPFk2bs5pxOTvEIeBQ73eSAXN9QlrIHGNY6y5kql4="
             alt="Lab Hallway"
             layout='fill'
-            objectFit='cover'
+            objectfit='cover'
           />
         </motion.div>
 
@@ -63,7 +62,7 @@ function About() {
             src="https://media.istockphoto.com/id/1454794642/photo/empty-corridor-hospital.webp?s=2048x2048&w=is&k=20&c=G5Sp6FTRKA-VIFqLTQmcIZwyMmlyh1OabpGC8Kx87IM="
             alt="Hospital Corridor"
             layout='fill'
-            objectFit='cover'
+            objectfit='cover'
           />
         </motion.div>
       </div>

@@ -43,7 +43,7 @@ export default function NutritionCounsellingPage() {
             <img
               src="https://media.istockphoto.com/id/645821998/photo/female-doctor-showing-apple-to-a-child.jpg?s=612x612&w=0&k=20&c=1fcuq_e8zbyTU3NjhKuqvy3f5OCPpI9BeQyCw2ZFnTM="
               alt="Nutrition Counselling"
-              fill
+              fill="true"
               className="object-cover"
             />
           </div>

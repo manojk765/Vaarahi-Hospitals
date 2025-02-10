@@ -111,7 +111,7 @@ export default function NICUCarePage() {
               <img
                 src="https://t4.ftcdn.net/jpg/03/53/87/53/360_F_353875308_9g9NJYbl5F8Bs2MSlG9FCSSNPMuR1Pg0.jpg"
                 alt="NICU Equipment"
-                fill
+                fill="true"
                 className="object-cover"
               />
             </div>
@@ -142,7 +142,7 @@ export default function NICUCarePage() {
               <img
                 src="https://media.istockphoto.com/id/956193106/photo/concerned-team-of-nurses-in-the-intensive-neonatal-care-unit-looking-at-a-premature-newborn-in.jpg?s=612x612&w=0&k=20&c=RKz-9tfgOwjEJPUyphf4QESiU1NMwmNmvTILrpyGslE="
                 alt="NICU Team"
-                fill
+                fill="true"
                 className="object-cover"
               />
             </div>
@@ -173,7 +173,7 @@ export default function NICUCarePage() {
               <img
                 src="https://media.istockphoto.com/id/956193188/photo/beautiful-newborn-in-the-neonatal-intensive-care-unit-sleeping.jpg?s=612x612&w=0&k=20&c=JJwzP7af6lDJq804gm2ia1eFD9kQLhcoYwd4w1aZg9M="
                 alt="Family Support"
-                fill
+                fill="true"
                 className="object-cover"
               />
             </div>

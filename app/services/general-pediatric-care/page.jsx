@@ -25,7 +25,7 @@ export default function GeneralPediatricCarePage() {
             <img
               src="https://img.freepik.com/free-photo/routine-examination-little-girl-s-throat_329181-7675.jpg?t=st=1739189568~exp=1739193168~hmac=df918c35349e592c800f62d13dbd07d6641c63523e9ee7e199a5d71066f712b0&w=996"
               alt="General Pediatric Care"
-              fill
+              fill="true"
               className="object-cover"
             />
           </div>

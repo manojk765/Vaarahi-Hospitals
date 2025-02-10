@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback } from "react"
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 
 const slides = [
   { 
@@ -44,7 +43,6 @@ const slides = [
 export function HeroCarousel() {
   const [current, setCurrent] = useState(0)
   const [fade, setFade] = useState(false)
-  const pathname = usePathname()  
 
   const nextSlide = useCallback(() => {
     setFade(true)
