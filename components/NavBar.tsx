@@ -157,7 +157,7 @@ const Navbar = () => {
 
             <div className="hidden lg:block">
               <Link
-                href="/book-appointment"
+                href="/contact"
                 className="bg-[#0047CC] text-white px-6 py-2 rounded hover:bg-[#0037A1] transition duration-300"
               >
                 Book Appointment

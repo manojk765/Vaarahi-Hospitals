@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Heart, Baby, Shield, Activity, Clock, Phone } from "lucide-react"
+import Link from "next/link"
 
 export default function NICUCarePage() {
   const [tab, setTab] = useState("facilities")
@@ -27,9 +28,9 @@ export default function NICUCarePage() {
                 State-of-the-art care for our tiniest patients, providing advanced medical support and nurturing
                 environment for premature and critically ill newborns.
                 </p>
-                <button className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition">
-                Contact NICU Department
-                </button>
+                <Link href="/contact" className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition">
+                  Contact Us
+                </Link>
             </div>
             </div>
         </div>
@@ -187,11 +188,11 @@ export default function NICUCarePage() {
           <div className="flex justify-center space-x-8">
             <div className="flex items-center gap-2">
               <Clock className="w-5 h-5" />
-              <span>Open 24/7</span>
+              <span>Available 24/7</span>
             </div>
             <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span>+91-98765-43210</span>
+              <span>+91-8142772466</span>
             </div>
           </div>
         </div>

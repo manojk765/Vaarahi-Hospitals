@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Calendar, Clock, Phone, MapPin, Shield, Stethoscope, Baby, Activity } from "lucide-react";
+import {Clock, Phone, MapPin, Shield, Stethoscope, Baby, Activity } from "lucide-react";
 
 export default function GeneralPediatricCarePage() {
   return (
@@ -13,12 +13,9 @@ export default function GeneralPediatricCarePage() {
               Comprehensive healthcare for children from birth through adolescence. Our expert pediatricians are dedicated to ensuring your child's health, growth, and development in a nurturing environment.
             </p>
             <div className="flex gap-4">
-              <button className="bg-[#82B1FF] hover:bg-[#BBDEFB] text-darkBlue py-3 px-6 rounded-lg text-lg transition duration-300">
+              <Link href="/contact" className="border-2 border-[#BBDEFB] hover:bg-[#BBDEFB] text-white hover:text-[#0D47A1] py-3 px-6 rounded-lg text-lg transition duration-300">
                 Schedule Appointment
-              </button>
-              <button className="border-2 border-[#BBDEFB] hover:bg-[#BBDEFB] text-white py-3 px-6 rounded-lg text-lg transition duration-300">
-                Learn More
-              </button>
+              </Link>
             </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
@@ -101,32 +98,32 @@ export default function GeneralPediatricCarePage() {
         {/* Visit Information */}
         <div className="mt-16 bg-[#0D47A1] rounded-lg p-8 shadow-md">
           <h2 className="text-4xl font-bold mb-8 text-white">Visit Information</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-white">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 text-white">
             <div className="flex items-start gap-4">
               <Clock className="w-6 h-6 text-[#BBDEFB]" />
               <div>
                 <h3 className="font-semibold mb-1">Hours</h3>
-                <p className="text-gray-300">Mon-Fri: 8am-6pm</p>
-                <p className="text-gray-300">Sat: 9am-1pm</p>
+                <p className="text-gray-300">Mon-Sat: Morning : 10 AM to 2 PM Evening : 5 PM to 8 PM</p>
+                <p className="text-gray-300">Sun: 10am-2pm</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Phone className="w-6 h-6 text-[#BBDEFB]" />
               <div>
                 <h3 className="font-semibold mb-1">Contact</h3>
-                <p className="text-gray-300">123-456-7890</p>
-                <p className="text-gray-300">Emergency: 911</p>
+                <p className="text-gray-300">8142772466</p>
+                <p className="text-gray-300">9177348793</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <MapPin className="w-6 h-6 text-[#BBDEFB]" />
               <div>
                 <h3 className="font-semibold mb-1">Location</h3>
-                <p className="text-gray-300">123 Medical Center Dr.</p>
-                <p className="text-gray-300">Suite 100</p>
+                <p className="text-gray-300">D no 5/18-4, Opp to B Mart, </p>
+                <p className="text-gray-300">Posina Compound, Proddatur, Kadapa, Andhra Pradesh 516360</p>
               </div>
             </div>
-            <div className="flex items-start gap-4">
+            {/* <div className="flex items-start gap-4">
               <Calendar className="w-6 h-6 text-[#BBDEFB]" />
               <div>
                 <h3 className="font-semibold mb-1">Appointments</h3>
@@ -135,7 +132,7 @@ export default function GeneralPediatricCarePage() {
                 </Link>
                 <p className="text-gray-300">or call us</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

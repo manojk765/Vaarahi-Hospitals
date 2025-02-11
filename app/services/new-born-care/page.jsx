@@ -1,4 +1,5 @@
-import { Baby, Heart, Shield, Clock, Calendar, Phone, Stethoscope } from "lucide-react"
+import { Baby, Heart, Shield, Clock,  MapPin, Phone, Stethoscope } from "lucide-react"
+import Link from "next/link"
 
 export default function NewBornCarePage() {
   return (
@@ -11,17 +12,17 @@ export default function NewBornCarePage() {
               Specialized care for your newborn, ensuring a healthy start to life with comprehensive medical attention and support during the crucial early stages of development.
             </p>
             <div className="flex gap-4">
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700">
+              <Link href="/contact" className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700">
                 Schedule Check-up
-              </button>
-              <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white">
+              </Link>
+              {/* <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white">
                 Emergency Care
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://sjc.microlink.io/crOXhfhd32jYe6Nnh0Ejw9X7gZU1mfZ-DS_olRXUFnq-KP1gkPK4CMdWWhPXjJNVugM85TxSuVK0EVGNhUuJ1w.jpeg"
+              src="https://images.unsplash.com/flagged/photo-1551049215-23fd6d2ac3f1?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Newborn Care"
               fill="true"
               className="object-cover"
@@ -110,7 +111,7 @@ export default function NewBornCarePage() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://sjc.microlink.io/crOXhfhd32jYe6Nnh0Ejw9X7gZU1mfZ-DS_olRXUFnq-KP1gkPK4CMdWWhPXjJNVugM85TxSuVK0EVGNhUuJ1w.jpeg"
+              src="https://images.unsplash.com/flagged/photo-1551049215-23fd6d2ac3f1?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Parent Education"
               fill="true"
               className="object-cover"
@@ -147,30 +148,41 @@ export default function NewBornCarePage() {
         {/* Contact Info */}
         <div className="bg-blue-600 rounded-lg p-8 text-white shadow-lg">
           <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 text-white">
             <div className="flex items-start gap-4">
-              <Calendar className="w-6 h-6" />
-              <div>
-                <h3 className="font-semibold mb-1">Appointments</h3>
-                <p>Schedule online or call</p>
-                <button className="underline">Book Now</button>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <Clock className="w-6 h-6" />
+              <Clock className="w-6 h-6 text-[#BBDEFB]" />
               <div>
                 <h3 className="font-semibold mb-1">Hours</h3>
-                <p>Mon-Sat: 8:00 AM - 8:00 PM</p>
+                <p className="text-gray">Mon-Sat: Morning : 10 AM to 2 PM Evening : 5 PM to 8 PM</p>
+                <p className="text-gray">Sun: 10am-2pm</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <Phone className="w-6 h-6" />
+              <Phone className="w-6 h-6 text-[#BBDEFB]" />
               <div>
                 <h3 className="font-semibold mb-1">Contact</h3>
-                <p>Phone: +1-800-555-1234</p>
-                <p>Email: info@hospital.com</p>
+                <p className="text-gray">8142772466</p>
+                <p className="text-gray">9177348793</p>
               </div>
             </div>
+            <div className="flex items-start gap-4">
+              <MapPin className="w-6 h-6 text-[#BBDEFB]" />
+              <div>
+                <h3 className="font-semibold mb-1">Location</h3>
+                <p className="text-gray">D no 5/18-4, Opp to B Mart, </p>
+                <p className="text-gray">Posina Compound, Proddatur, Kadapa, Andhra Pradesh 516360</p>
+              </div>
+            </div>
+            {/* <div className="flex items-start gap-4">
+              <Calendar className="w-6 h-6 text-[#BBDEFB]" />
+              <div>
+                <h3 className="font-semibold mb-1">Appointments</h3>
+                <Link href="#" className="text-[#82B1FF] hover:underline">
+                  Schedule Online
+                </Link>
+                <p className="text-gray-300">or call us</p>
+              </div>
+            </div> */}
           </div>
         </div>
       </div>

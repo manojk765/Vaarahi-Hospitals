@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaRegCopyright } from 'react-icons/fa';
 import { RiInstagramLine } from 'react-icons/ri';
-import { FaLinkedin, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
-import { RiTelegram2Fill } from 'react-icons/ri';
+import { FaYoutube, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
 import Logo from './Hospital_name.png';
-import Image from 'next/image';
+import Image from 'next/image'; 
+import Link from 'next/link';
 
 export const footerLinks = [
   { 
@@ -43,11 +43,10 @@ export const footerLinks = [
 ]; 
 
 export const socialMedia = [
-  { icon: <RiTelegram2Fill />, link: 'https://t.me/+gzef6ogHhCUxNmU1' },
-  { icon: <FaWhatsapp />, link: 'https://wa.me/1234567890' },
-  { icon: <RiInstagramLine />, link: 'https://www.instagram.com/themarketable.in' },
+  { icon: <FaWhatsapp />, link: 'https://wa.me/8142772466' },
+  { icon: <RiInstagramLine />, link: 'https://www.instagram.com' },
   { icon: <FaFacebookF />, link: 'https://www.facebook.com/' },
-  { icon: <FaLinkedin />, link: 'https://www.linkedin.com/company/marketable-in/' },
+  { icon: <FaYoutube />, link: 'https://www.linkedin.com' },
 ];
 
 const Footer = () => {
@@ -128,6 +127,7 @@ const Footer = () => {
           <div className="flex items-center gap-2 justify-center">
             <FaRegCopyright width={20} height={20} className="text-black" />
             <p>Copyright. All rights reserved.</p>
+            <p>Made by</p><Link href="https://github.com/manojk765"> Manoj Koneti</Link>
           </div>
         </div>
       </div>

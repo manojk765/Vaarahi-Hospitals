@@ -1,4 +1,5 @@
 import { Brain, Activity, Microscope, Stethoscope, Calendar, Clock, Phone, FileText } from "lucide-react";
+import Link from "next/link";
 
 export default function PediatricNeurologyPage() {
   return (
@@ -13,17 +14,17 @@ export default function PediatricNeurologyPage() {
               personalized treatment plans to ensure the best outcomes.
             </p>
             <div className="flex gap-4">
-              <button className="bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700">
+              <Link href="/contact" className="bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700">
                 Request Consultation
-              </button>
-              <button className="border-2 border-blue-600 text-blue-600 py-3 px-6 rounded-lg font-semibold hover:bg-blue-100">
+              </Link>
+              {/* <button className="border-2 border-blue-600 text-blue-600 py-3 px-6 rounded-lg font-semibold hover:bg-blue-100">
                 Learn More
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://sjc.microlink.io/crOXhfhd32jYe6Nnh0Ejw9X7gZU1mfZ-DS_olRXUFnq-KP1gkPK4CMdWWhPXjJNVugM85TxSuVK0EVGNhUuJ1w.jpeg"
+              src="https://img.freepik.com/free-photo/pediatric-physician-with-protection-mask-stethoscope-listening-breath-girl-doctor-specialist-medicine-providing-health-care-services-consultation-treatment-covid-19-hospital_482257-14516.jpg"
               alt="Pediatric Neurology"
               fill="true"
               className="object-cover"
@@ -110,7 +111,7 @@ export default function PediatricNeurologyPage() {
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://sjc.microlink.io/crOXhfhd32jYe6Nnh0Ejw9X7gZU1mfZ-DS_olRXUFnq-KP1gkPK4CMdWWhPXjJNVugM85TxSuVK0EVGNhUuJ1w.jpeg"
+              src="https://img.freepik.com/free-photo/doctor-checking-child-injured-arm-talking-with-mother-healthcare-practitioner-physician-specialist-medicine-providing-health-care-service-radiographic-treatment-examination-hospital-cabinet_482257-14559.jpg"
               alt="Neurological Treatment"
               fill="true"
               className="object-cover"
@@ -185,22 +186,23 @@ export default function PediatricNeurologyPage() {
             <div className="flex items-center gap-4">
               <Calendar className="w-8 h-8 text-blue-600" />
               <div>
-                <p className="text-gray-700">Monday - Friday</p>
-                <p className="font-semibold">9:00 AM - 6:00 PM</p>
+                <p className="text-gray-700">Monday - Saturday</p>
+                <p className="font-semibold">10:00 AM - 2:00 PM</p>
+                <p className="font-semibold">5:00 PM - 8:00 PM</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <Clock className="w-8 h-8 text-blue-600" />
               <div>
-                <p className="text-gray-700">Weekends</p>
-                <p className="font-semibold">10:00 AM - 4:00 PM</p>
+                <p className="text-gray-700">Sunday</p>
+                <p className="font-semibold">10:00 AM - 2:00 PM</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <Phone className="w-8 h-8 text-blue-600" />
               <div>
                 <p className="text-gray-700">Contact Us</p>
-                <p className="font-semibold">+1 (555) 123-4567</p>
+                <p className="font-semibold">+91 81427724667</p>
               </div>
             </div>
           </div>

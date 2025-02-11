@@ -1,4 +1,5 @@
 import { Phone, Ambulance, Clock, AlertTriangle, Stethoscope, Users } from "lucide-react"
+import Link from "next/link"
 
 export default function EmergencyServicesPage() {
   return (
@@ -12,17 +13,17 @@ export default function EmergencyServicesPage() {
               attention in critical situations at any hour.
             </p>
             <div className="flex gap-4">
-              <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+              {/* <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
                 Emergency Information
-              </button>
-              <button className="px-6 py-3 border border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition">
+              </button> */}
+              <Link href="/contact" className="px-6 py-3 border border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition">
                 Contact Us
-              </button>
+              </Link>
             </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://sjc.microlink.io/crOXhfhd32jYe6Nnh0Ejw9X7gZU1mfZ-DS_olRXUFnq-KP1gkPK4CMdWWhPXjJNVugM85TxSuVK0EVGNhUuJ1w.jpeg"
+              src="https://images.unsplash.com/photo-1631201039086-1405a889c699?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Emergency Services"
               fill="true"
               className="object-cover"
@@ -85,7 +86,7 @@ export default function EmergencyServicesPage() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://sjc.microlink.io/crOXhfhd32jYe6Nnh0Ejw9X7gZU1mfZ-DS_olRXUFnq-KP1gkPK4CMdWWhPXjJNVugM85TxSuVK0EVGNhUuJ1w.jpeg"
+              src="https://img.freepik.com/free-photo/doctors-nurse-pushing-female-patient-stretcher-corridor-hospital_662251-3073.jpg?t=st=1739278185~exp=1739281785~hmac=7a4a5b5055c0e918d65b4a3c8b37ad16a5e5535998f30965e0c1b9936e443de8&w=996"
               alt="Emergency Team"
               fill="true"
               className="object-cover"
@@ -129,8 +130,8 @@ export default function EmergencyServicesPage() {
           <h2 className="text-2xl font-bold mb-6 text-blue-800">Emergency Contact Information</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              { title: "Emergency Hotline", number: "911", description: "For life-threatening emergencies" },
-              { title: "Urgent Care Line", number: "123-456-7890", description: "For non-life-threatening situations" },
+              { title: "Emergency Contact Number", number: "8142772466", description: "For emergency contact" },
+              { title: "Contact", number: "9177348793", description: "For immediate contact" },
             ].map((contact, idx) => (
               <div key={idx} className="flex items-start gap-4">
                 <Phone className="w-6 h-6 text-blue-600" />
@@ -142,11 +143,11 @@ export default function EmergencyServicesPage() {
               </div>
             ))}
           </div>
-          <div className="mt-8">
+          {/* <div className="mt-8">
             <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
               Get Directions to ER
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

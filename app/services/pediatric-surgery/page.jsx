@@ -1,4 +1,6 @@
 import React from 'react';
+import { ScissorsIcon , Heart, Eye, Bone, Calendar, Clock, Phone } from 'lucide-react';
+import Link from 'next/link';
 
 export default function PediatricSurgeryPage() {
   return (
@@ -15,17 +17,17 @@ export default function PediatricSurgeryPage() {
               combining advanced medical techniques with gentle, supportive approach.
             </p>
             <div className="flex gap-4">
-              <button className="px-6 py-3 bg-sky-500 text-white rounded-full hover:bg-sky-600 transition-colors">
+              <Link href="/contact" className="px-6 py-3 bg-sky-500 text-white rounded-full hover:bg-sky-600 transition-colors">
                 Book Consultation
-              </button>
-              <button className="px-6 py-3 border-2 border-sky-500 text-sky-500 rounded-full hover:bg-sky-50 transition-colors">
+              </Link>
+              {/* <button className="px-6 py-3 border-2 border-sky-500 text-sky-500 rounded-full hover:bg-sky-50 transition-colors">
                 Learn More
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="h-[400px]">
             <img 
-              src="https://images.unsplash.com/photo-1638202993928-7267aad84f5c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              src="https://static.vecteezy.com/system/resources/thumbnails/053/127/698/small_2x/doctor-team-performing-operating-on-patient-in-operating-room-of-surgical-department-at-hospital-photo.jpg" 
               alt="Pediatric Surgery" 
               className="w-full h-full object-cover"
             />
@@ -35,10 +37,10 @@ export default function PediatricSurgeryPage() {
         {/* Surgical Specialties */}
         <div className="grid md:grid-cols-4 gap-6 mb-16">
           {[
-            { icon: '🔪', title: 'General Surgery', description: 'Common pediatric procedures' },
-            { icon: '❤️', title: 'Cardiothoracic', description: 'Heart and lung surgeries' },
-            { icon: '👁️', title: 'Ophthalmology', description: 'Eye surgeries for children' },
-            { icon: '🦴', title: 'Orthopedics', description: 'Bone and joint procedures' }
+            { icon: <ScissorsIcon />, title: 'General Surgery', description: 'Common pediatric procedures' },
+            { icon: <Heart />, title: 'Cardiothoracic', description: 'Heart and lung surgeries' },
+            { icon: <Eye />, title: 'Ophthalmology', description: 'Eye surgeries for children' },
+            { icon: <Bone />, title: 'Orthopedics', description: 'Bone and joint procedures' }
           ].map((specialty, index) => (
             <div 
               key={index} 
@@ -56,16 +58,15 @@ export default function PediatricSurgeryPage() {
           <h2 className="text-3xl font-bold mb-8 text-sky-700 text-center">
             Our Expert Surgical Team
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="flex flex-col md:flex-row justify-center items-center md:gap-28 ">
             {[
-              { name: 'Dr. Emily Smith', specialty: 'Pediatric General Surgeon' },
-              { name: 'Dr. Michael Johnson', specialty: 'Pediatric Cardiothoracic Surgeon' },
-              { name: 'Dr. Sarah Lee', specialty: 'Pediatric Orthopedic Surgeon' }
+              { name: 'Dr. V C Lokesh Kumar', specialty: 'Pediatric and Neonatal Emergency Services', img: '/assets/Home/Doctor1.jpg' },
+              { name: 'Dr. T Sruthi', specialty: ' Consultant neonotologist and developemental pediatrician', img: '/assets/Home/Doctor2.jpg' },
             ].map((doctor, index) => (
               <div key={index} className="text-center">
                 <div className="w-40 h-40 mx-auto mb-4 rounded-full overflow-hidden shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1618498082410-b4e5c1cc21a8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    src={doctor.img}
                     alt={doctor.name} 
                     className="w-full h-full object-cover"
                   />
@@ -77,32 +78,27 @@ export default function PediatricSurgeryPage() {
           </div>
         </div>
 
+
         {/* Contact Section */}
         <div className="bg-sky-600 text-white rounded-lg p-12 text-center">
           <h2 className="text-3xl font-bold mb-6">Contact Pediatric Surgery</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 11h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2z" />
-              </svg>
+              <Calendar className="h-12 w-12 mx-auto mb-4" />
               <h3 className="font-semibold mb-2">Book Appointment</h3>
               <p>Schedule your consultation</p>
             </div>
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+              <Clock className="h-12 w-12 mx-auto mb-4" />
               <h3 className="font-semibold mb-2">Surgery Hours</h3>
-              <p>Mon-Fri: 7am-6pm</p>
+              <p>Mon-Sat: 10am-2pm/5am-8pm</p>
               <p>Emergency: 24/7</p>
             </div>
             <div>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
+              <Phone className="h-12 w-12 mx-auto mb-4" />
               <h3 className="font-semibold mb-2">Contact</h3>
-              <p>Department: 123-456-7890</p>
-              <p>Emergency: 911</p>
+              <p>8142772466</p>
+              <p>9177348793</p>
             </div>
           </div>
         </div>

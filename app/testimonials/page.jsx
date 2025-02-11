@@ -4,37 +4,37 @@ export default function TestimonialsPage() {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Thompson",
+      name: "Sravanthi",
       rating: 5,
       content:
-        "The care our daughter received was exceptional. The staff made her feel comfortable and safe throughout the entire process.",
+      "The only super specialty hospital in town, offering exceptional neonatal and pediatric care, led by the highly skilled Dr. Sruthi, a dedicated neonatologist, and Dr. Lokesh, an expert pediatrician. Both doctors provide compassionate and personalized care, ensuring the best outcomes for newborns and children. A trusted choice for families seeking top-tier medical attention for their little ones! Highly recommend for specialized children's care.  ",
       video: false,
       mediaUrl: "assets/Hospital_logo.png", // Link to the video
     },
     {
       id: 2,
-      name: "Michael Rodriguez",
+      name: "Kranthi",
       rating: 5,
       content:
-        "We couldn't be happier with the treatment and attention our son received. The doctors were patient and thorough in explaining everything.",
+"Many of my friends suggested to me this is the best children's hospital. I went and met Dr.Lokesh and Dr.Sruthi for my kids treatment. The treatment was top-notch and the staff provided good supervision.The hospital was clean and hygienic,which made me feel safe and comfortable during my visit.I highly recommend this hospital for anyone in need of pediatric care.",
       video: false,
       mediaUrl: "assets/Hospital_logo.png", // Link to the image
     },
     {
       id: 3,
-      name: "Emily Chen",
+      name: "Rajesh Babu",
       rating: 5,
       content:
-        "The pediatric team went above and beyond in caring for our twins. Their expertise and compassion made a difficult time much easier.",
+"Varahi Super Specialist hospital is one of the best hospital in nearby locations. I recently visited hospital for my kids sickness and doctor Sruthi & Lokesh are very well qualified and understand the problem patiently and addressed health issues. I definitely recommend them. ",
       video: false,
       mediaUrl: "assets/Hospital_logo.png", // Link to the video
     },
     {
       id: 4,
-      name: "David Williams",
+      name: "Durga Lakshmi",
       rating: 4,
       content:
-        "Outstanding care and attention to detail. The facility is child-friendly and the staff knows exactly how to make kids feel at ease.",
+"Vaarahi children's super speciality is one of the best hospital.it was a great experience.The supporting staff outstanding.Everything was crystal and clear from admitting the patients to discharge I will recommend to my friends and relatives .Docters are simple and patience and giving excellent treatment,fine facility at the hospital with good medical equipment and cleanliness.The surroundings are very peace full,clean tidy which is significant to the hospital",
       video: false,
       mediaUrl: "assets/Hospital_logo.png", // Link to the image
     },

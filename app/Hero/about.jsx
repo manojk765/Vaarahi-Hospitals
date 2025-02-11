@@ -17,7 +17,7 @@ function About() {
             growth, and development. From preventive care to advanced medical treatments, we offer personalized care to meet the
             unique needs of every child and their family.
           </p>
-          <Link href="/about#doctor">
+          <Link href="/about">
             <button className="bg-[#262785] text-white text-base md:text-lg py-3 px-8 rounded-lg block ml-0 hover:bg-[#ee4c45] hover:translate-y-1 transition-all duration-300 ease-in-out font-info">
               More about Us
             </button>

@@ -1,4 +1,5 @@
-import { Apple, Brain, Heart, Scale, Calendar } from "lucide-react"
+import { Apple, Brain, Heart, Scale, Calendar} from "lucide-react"
+import Link from "next/link"
 
 export default function NutritionCounsellingPage() {
   return (
@@ -10,9 +11,9 @@ export default function NutritionCounsellingPage() {
             Expert guidance for your child's nutritional needs, promoting healthy growth and development through
             personalized dietary plans and education.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg">
-            Schedule a Consultation
-          </button>
+          <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg">
+            Contact Us
+          </Link>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
@@ -116,13 +117,10 @@ export default function NutritionCounsellingPage() {
               health through proper nutrition.
             </p>
             <div className="flex justify-center items-center gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg">
+              <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg text-lg">
                 <Calendar className="w-4 h-4 mr-2 inline " />
                 Book Appointment
-              </button>
-              <button className="border border-blue-600 text-blue-600 py-3 px-6 rounded-lg text-lg hover:bg-blue-50">
-                Learn More
-              </button>
+              </Link>
             </div>
           </div>
         </div>

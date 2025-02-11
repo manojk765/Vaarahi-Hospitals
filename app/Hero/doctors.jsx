@@ -79,7 +79,7 @@ function Doctors() {
                   {doc.description}
                 </p>
                 
-                <Link href="/about">
+                <Link href="/about#doctor">
                 
                 <button className="bg-blue-500 text-white py-2 px-4 rounded-full font-medium transition-transform duration-200 hover:bg-blue-600 hover:shadow-md">
                   Know More
